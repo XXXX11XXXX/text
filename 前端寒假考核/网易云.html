@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云</title>
+    <style>
+        ul{
+				list-style-type: none; 
+				width: 200px;
+				background-color: #DDDDDD;
+                position: relative;
+                
+			}
+        li a{
+				
+				display: block;  
+			
+				text-decoration: none;
+				color: #000000;
+				padding: 8px 16px;
+			}
+        li a:hover{
+				background-color: #555;
+				color: white;
+			}
+        li a.active {
+			    background-color: #333333;
+			    color: white;
+			}
+            ul{
+				
+				position: fixed;
+				list-style-type: none;
+				width: 15%;
+				height: 100%;
+				background-color: #DDDDDD;
+			}
+            #button1{
+                position: relative;
+                bottom: 40px;
+                left: 40px;
+                width: 50px;
+                height: 50px;
+            }
+        #search{
+            position: relative;
+            left: 50px;
+            bottom: 40px;
+            height: 50px;
+            width: 200px;
+        }
+        #ting{
+            position: relative;
+            left: 80px;
+            height: 70px;
+            bottom: 10px;
+        }
+        #user-name{
+            position: relative;
+            left: 400px;
+            bottom: 40px;
+            font-size: 30px;
+
+        }
+        a:link{
+            text-decoration: none;
+            color: #000000;
+        }
+        a:checked{
+            color: #000000;
+        }
+        #other{
+            position: relative;
+            left: 400px;
+            width: 350px;
+            bottom: 20px;
+        }
+        
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+        text-decoration: none;
+    }
+	#container{
+		position: relative;
+		width: 500px;
+		height: 260px;
+		margin: 20px auto;
+		overflow: hidden; 
+        
+	}
+	#container .parent{
+		position: absolute;
+		width: 2500px; 
+		height: 260px;
+	}
+	
+	#container .parent li{
+		float: left;
+		width: 500px;
+		height: 100%;
+	}
+	#container .parent li img{
+		width: 100%;
+		height: 100%;
+	}
+	#container .btnLeft,
+	#container .btnRight{
+		width: 30px;
+	    height: 30px;
+	    background-color: #fcfafa;
+	    border-radius: 20%;
+	    opacity: 80%;
+	    position: absolute; 
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	    font-size: 20px;
+   	 	color: #f40;
+   	 	text-align: center;
+   	 	line-height: 30px;
+	}
+	#container .btnLeft{
+	    left: 10px;
+	}
+	#container .btnRight{
+		right: 10px;
+	}
+	#container .btnLeft:hover,
+	#container .btnRight:hover{
+		opacity: 90%;
+		cursor: pointer;
+	}
+	
+	#container .modal{
+		width: 100%;
+		height: 40px;
+		background: rgba(0,0,0,.3);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		line-height: 40px;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+	#container .modal .title{
+		float: left;
+		color: #fff;
+		font-size: 12px;
+	}
+	#container .modal .dots{
+		float: right;
+		position: absolute;
+		bottom: 10px;
+		left: 340px;
+	}
+	#container .modal .dots li{
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		float: left;
+		
+		margin: 0 5px;
+		cursor: pointer;
+	}
+	.clearfix::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.on{
+		background-color: red;
+	}
+	.off{
+		background-color: white;
+	}
+    #white{
+        width: 250px;
+        height: 600px;
+        background: white;
+        position: relative;
+        left: 910px;
+        top:250px;
+
+    }
+    #songlist{
+        position: relative;
+        bottom: 600px;
+        left: 350px;
+    }
+    #slp{
+        position: relative;
+        bottom: 600px;
+        left: 350px;
+    }
+    #top{
+        position: fixed;
+    }
+    </style>
+</head>
+<body>
+    
+    <img src="网易云logo.png" alt=""width=320px><button id="button1"><</button>
+    <input type="text" id="search">
+    <a href="#"><img src="听歌识曲.png" alt="" id="ting"></a>
+    <span id="user-name"><a href="#">当只猫也挺好</a></span>
+    <img src="其他.png" alt="" id="other">
+
+    <ul>
+        <li><a href="#home" class="active">为我推荐</a></li>
+        <li><a href="#news">云音乐精选</a></li>
+        <li><a href="#contact">播客</a></li>
+        <li><a href="#about">私人漫游</a></li>
+        <li><a href="#community">社区</a></li>
+        <br>
+        <br>
+        <hr>
+        <li><a href="http://127.0.0.1:5501/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E9%9F%B3%E4%B9%90.html">我喜欢的音乐</a></li>
+        <li><a href="#lastest">最近播放</a></li>
+        <li><a href="#My podcast">我的播客</a></li>
+        <li><a href="#My favorites">我的收藏</a></li>
+        <li><a href="#download">下载管理</a></li>
+        <li><a href="#Local music">本地音乐</a></li>
+        <li><a href="#My Music Cloud Drive">我的音乐云盘</a></li>
+        <br>
+        <hr>
+        <li><a href="#Playlist I created">我创建的歌单</a></li>
+        <br>
+        <hr>
+        <li><a href="#My favorite playlist">我收藏的歌单</a></li>
+    </ul>
+    <div id="container">
+        <ul class="parent" style="left: 0;">
+            <li><img src="1.png"></li>
+            <li><img src="2.png"></li>
+            <li><img src="3.png"></li>
+            <li><img src="4.png"></li>
+            <li><img src="5.png"></li>
+        </ul>
+    
+        <div class="btnLeft">&lt;</div>
+        <div class="btnRight">&gt;</div>
+        <div class="modal">
+            <div class="title">
+            
+            </div>
+            <!-- <div class="dots">
+                <ul class="clearfix">
+                    <li class="on"></li>
+                    <li class="off"></li>
+                    <li class="off"></li>
+                    <li class="off"></li>
+                    <li class="off"></li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript">
+        
+    var imgShow = document.getElementsByClassName('parent')[0],
+        dotList = document.querySelectorAll('.dots >.clearfix > li');
+    var btnLeft = document.getElementsByClassName('btnLeft')[0],
+        btnRight = document.getElementsByClassName('btnRight')[0];
+    var dotLen = dotList.length,
+        index = 0; 
+    
+    
+    function showRadius() {
+        for(var i = 0; i < dotLen; i++) {
+            if(dotList[i].className === "on"){
+                dotList[i].className = "off";
+            }
+        }
+        dotList[index].className = "on";
+    }
+    
+    
+    btnLeft.onclick = function() {
+        index--;
+        if(index < 0){  
+            index = 4;
+        }
+        showRadius();
+        var left;
+        var imgLeft = imgShow.style.left;
+        if(imgLeft === "0px") { 
+            left = -2000;
+        }
+        else{
+            left = parseInt(imgLeft) + 500; 
+        }
+        imgShow.style.left = left + "px";
+    }
+    
+    
+    btnRight.onclick = function() {
+        index++;
+        if(index > 4){  
+            index = 0;
+        }
+        showRadius();
+        var right;
+        var imgLeft = imgShow.style.left;
+        if(imgLeft === "-2000px") { 
+            right = 0;
+        }
+        else{
+            right = parseInt(imgLeft) - 500; 
+        }
+        imgShow.style.left = right + "px";
+    }
+    
+    
+    var timer;
+    function autoPlay() {
+        timer = setInterval(function() {
+            var right;
+            var imgLeft = imgShow.style.left;
+            if(imgLeft === "-2000px") {
+                right = 0;
+            }
+            else{
+                right = parseInt(imgLeft) - 500;
+            }
+            imgShow.style.left = right + "px";
+        } ,1000)
+    }
+    autoPlay();
+    
+    for(var i = 0; i < dotLen; i++) {
+        
+        (function(i) {
+            dotList[i].onclick = function() {
+                var dis = index - i; 
+                imgShow.style.left = (parseInt(imgShow.style.left) + dis * 500) + "px";
+                index = i; 
+                showRadius();
+            }
+        })(i);
+    }
+    
+    </script>
+<div id="white"></div>
+<a href="http://127.0.0.1:5501/%E6%AD%8C%E5%8D%95%E5%B9%BF%E5%9C%BA.html"><span id="slp">推荐歌单</span></a>
+<div id="songlist">
+<a href="http://127.0.0.1:5501/%E6%97%A5%E6%8E%A8.html"><img src="推荐5.png" alt="http://127.0.0.1:5501/%E6%97%A5%E6%8E%A8.html" width="200px"></a>
+<a href="http://127.0.0.1:5501/%E6%AC%A7%E7%BE%8E%E5%81%8F%E7%88%B1.html"><img src="推荐4.png" alt="http://127.0.0.1:5501/%E6%97%A5%E6%8E%A8.html" width="200px"></a>
+<a href="http://127.0.0.1:5501/%E6%85%A2%E6%8A%92%E8%B0%83%E6%83%85.html"><img src="推荐3.png" alt="http://127.0.0.1:5501/%E6%85%A2%E6%8A%92%E8%B0%83%E6%83%85.html" width="200px"></a>
+<a href="http://127.0.0.1:5501/%E6%AF%9B%E4%B8%8D%E6%98%93.html"><img src="推荐2.png" alt="http://127.0.0.1:5501/%E6%AF%9B%E4%B8%8D%E6%98%93.html" width="200px"></a>
+<a href="http://127.0.0.1:5501/%E6%B8%A9%E6%9F%94.html"><img src="推荐1.png" alt="http://127.0.0.1:5501/%E6%B8%A9%E6%9F%94.html" width="200px"></a>
+<a href="http://127.0.0.1:5501/%E4%BE%A7%E7%94%B0.html"><img src="推荐6.png" alt="http://127.0.0.1:5501/%E4%BE%A7%E7%94%B0.html" width="200px"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul{
+				list-style-type: none; 
+				width: 200px;
+				background-color: #DDDDDD;
+                position: relative;
+                
+			}
+        li a{
+				
+				display: block;  
+			
+				text-decoration: none;
+				color: #000000;
+				padding: 8px 16px;
+			}
+        li a:hover{
+				background-color: #555;
+				color: white;
+			}
+        li a.active {
+			    background-color: #333333;
+			    color: white;
+			}
+            ul{
+				
+				position: fixed;
+				list-style-type: none;
+				width: 15%;
+				height: 100%;
+				background-color: #DDDDDD;
+			}
+            #button1{
+                position: relative;
+                bottom: 40px;
+                left: 40px;
+                width: 50px;
+                height: 50px;
+            }
+        #search{
+            position: relative;
+            left: 50px;
+            bottom: 40px;
+            height: 50px;
+            width: 200px;
+        }
+        #ting{
+            position: relative;
+            left: 80px;
+            height: 70px;
+            bottom: 10px;
+        }
+        #user-name{
+            position: relative;
+            left: 400px;
+            bottom: 40px;
+            font-size: 30px;
+
+        }
+        a:link{
+            text-decoration: none;
+            color: #000000;
+        }
+        a:checked{
+            color: #000000;
+        }
+        #other{
+            position: relative;
+            left: 400px;
+            width: 350px;
+            bottom: 20px;
+        }
+        
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+        text-decoration: none;
+    }
+    #square{
+        position: relative;
+        left: 350px;
+       
+    }
+    #square1{
+        font-size: 30px;
+    }
+    .connection1{
+        color: #000000;
+    }
+    #list{
+        position: relative;
+        left: 0px;
+    }
+    </style>
+</head>
+<body>
+    <img src="网易云logo.png" alt=""width=320px><button id="button1"><</button>
+    <input type="text" id="search">
+    <a href="#"><img src="听歌识曲.png" alt="" id="ting"></a>
+    <span id="user-name"><a href="#">当只猫也挺好</a></span>
+    <img src="其他.png" alt="" id="other">
+
+    <ul>
+        <li><a href="#home" class="active">为我推荐</a></li>
+        <li><a href="#news">云音乐精选</a></li>
+        <li><a href="#contact">播客</a></li>
+        <li><a href="#about">私人漫游</a></li>
+        <li><a href="#community">社区</a></li>
+        <br>
+        <br>
+        <hr>
+        <li><a href="#like">我喜欢的音乐</a></li>
+        <li><a href="#lastest">最近播放</a></li>
+        <li><a href="#My podcast">我的播客</a></li>
+        <li><a href="#My favorites">我的收藏</a></li>
+        <li><a href="#download">下载管理</a></li>
+        <li><a href="#Local music">本地音乐</a></li>
+        <li><a href="#My Music Cloud Drive">我的音乐云盘</a></li>
+        <br>
+        <hr>
+        <li><a href="#Playlist I created">我创建的歌单</a></li>
+        <br>
+        <hr>
+        <li><a href="#My favorite playlist">我收藏的歌单</a></li>
+    </ul>
+    <div id="square">
+        <span id="square1">歌单广场</span><br>
+        <div class="connection1">
+        <a href="http://127.0.0.1:5501/%E6%AD%8C%E5%8D%95%E5%B9%BF%E5%9C%BA.html">推荐</a>
+        <a href="http://127.0.0.1:5501/%E6%AD%8C%E5%8D%95%E5%B9%BF%E5%9C%BA%E5%AE%98%E6%96%B9.html">官方</a>
+        <a href="http://127.0.0.1:5501/%E6%AD%8C%E5%8D%95%E5%B9%BF%E5%9C%BA%E5%8D%8E%E8%AF%AD.html">华语</a>
+        </div>
+        <div id="list">
+            <a href="#"><img src="官方1.png" width="250px"></a>
+            <a href="#"><img src="官方2.png" width="250px"></a>
+            <a href="#"><img src="官方3.png" width="250px"></a>
+            <a href="#"><img src="官方7.png" width="250px"></a>
+            <a href="#"><img src="官方8.png" width="250px"></a>
+
+            <br>
+            <a href="#"><img src="官方4.png" width="250px"></a>
+            <a href="#"><img src="官方5.png" width="250px"></a>
+            <a href="#"><img src="官方6.png" width="250px"></a>
+            <a href="#"><img src="官方9.png" width="250px"></a>
+            <a href="#"><img src="官方10.png" width="250px"></a>
+            
+        </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欧美偏爱</title>
+    <style>
+    ul{
+        list-style-type: none; 
+        width: 200px;
+        background-color: #DDDDDD;
+        position: relative;
+        
+    }
+li a{
+        
+        display: block;  
+    
+        text-decoration: none;
+        color: #000000;
+        padding: 8px 16px;
+    }
+li a:hover{
+        background-color: #555;
+        color: white;
+    }
+li a.active {
+        background-color: #333333;
+        color: white;
+    }
+    ul{
+        
+        position: fixed;
+        list-style-type: none;
+        width: 15%;
+        height: 100%;
+        background-color: #DDDDDD;
+    }
+    #button1{
+        position: relative;
+        bottom: 40px;
+        left: 40px;
+        width: 50px;
+        height: 50px;
+    }
+#search{
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    height: 50px;
+    width: 200px;
+}
+#ting{
+    position: relative;
+    left: 80px;
+    height: 70px;
+    bottom: 10px;
+}
+#user-name{
+    position: relative;
+    left: 400px;
+    bottom: 40px;
+    font-size: 30px;
+
+}
+a:link{
+    text-decoration: none;
+    color: #000000;
+}
+a:checked{
+    color: #000000;
+}
+#other{
+    position: relative;
+    left: 400px;
+    width: 350px;
+    bottom: 20px;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+ul{
+list-style: none;
+}
+a{
+text-decoration: none;}
+#favorite{
+    position: relative;
+    left: 300px;
+}
+#my-favorite-song{
+    position: relative;
+    bottom: 180px;
+    font-size: 30px;
+}
+#word1{
+    position: relative;
+    left: 505px;
+    bottom: 180px;
+    
+}
+#button{
+    position: relative;
+    left: 510px;
+    bottom: 50px;
+}
+#word2{
+    position: relative;
+    left: 300px;
+}
+#word3{
+    position: relative;
+    left: 300px;
+    top: 10px;
+}
+#word4{
+    position: relative;
+    left: 800px;
+}
+#word5{
+    position: relative;
+    left: 1200px;
+    bottom: 23px;
+}
+#word6{
+    position: relative;
+    bottom: 40px;
+    left: 1500px;
+}
+#word7{
+    position: relative;
+    bottom: 0px;
+    left: 300px;
+}
+#word8{
+    position: relative;
+    bottom: 20px;
+    left: 800px;
+}
+#button2{
+    position: relative;
+    bottom: 40px;
+    left: 1210px;
+}
+#word9{
+    position: relative;
+    bottom: 60px;
+    left: 1500px;
+}
+#word10{
+    position: relative;
+    left: 300px;
+}
+#word11{
+    position: relative;
+    left: 800px;
+    bottom: 20px;
+}
+#word12{
+    position: relative;
+    bottom: 30px;
+    left: 1210px;
+}
+#word13{ position: relative;
+    bottom: 60px;
+    left: 1500px;}
+#word14{
+    position: relative;
+    left: 300px;
+}
+#word15{
+    position: relative;
+    left: 800px;
+    bottom: 20px;
+}
+#word16{
+    position: relative;
+    bottom: 30px;
+    left: 1210px;
+}
+#word17{ position: relative;
+    bottom: 60px;
+    left: 1500px;}
+</style>
+</head>
+<body>
+    <img src="网易云logo.png" alt=""width=320px><button id="button1"><</button>
+    <input type="text" id="search">
+    <a href="#"><img src="听歌识曲.png" alt="" id="ting"></a>
+    <span id="user-name"><a href="#">当只猫也挺好</a></span>
+    <img src="其他.png" alt="" id="other">
+
+    <ul>
+        <li><a href="#home" class="active">为我推荐</a></li>
+        <li><a href="#news">云音乐精选</a></li>
+        <li><a href="#contact">播客</a></li>
+        <li><a href="#about">私人漫游</a></li>
+        <li><a href="#community">社区</a></li>
+        <br>
+        <br>
+        <hr>
+        <li><a href="http://127.0.0.1:5501/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E9%9F%B3%E4%B9%90.html">我喜欢的音乐</a></li>
+        <li><a href="#lastest">最近播放</a></li>
+        <li><a href="#My podcast">我的播客</a></li>
+        <li><a href="#My favorites">我的收藏</a></li>
+        <li><a href="#download">下载管理</a></li>
+        <li><a href="#Local music">本地音乐</a></li>
+        <li><a href="#My Music Cloud Drive">我的音乐云盘</a></li>
+        <br>
+        <hr>
+        <li><a href="#Playlist I created">我创建的歌单</a></li>
+        <br>
+        <hr>
+        <li><a href="#My favorite playlist">我收藏的歌单</a></li>
+    </ul>
+    <div id="favorite">
+        <img src="推荐4.png" alt="" width="200px">
+        <span id="my-favorite-song">
+            YouTube单曲：欧美控的专属偏爱 
+        </span>
+    </div>
+    <!-- 标题 -->
+    <div id="word1"><span>YouTube播放量最火超好听宝藏单曲</span><br>创作者：云音乐多多</div> 
+    <!-- 介绍 -->
+    <div id="button"><button>播放全部</button>&nbsp;&nbsp;&nbsp;<button>下载</button>&nbsp;&nbsp;&nbsp;<button>···</button></div>
+    <div id="word2">歌曲 &nbsp;评论 &nbsp;收藏者</div>
+    <div id="word3"><span>标题</span></div>
+    <div id="word4">专辑</div>
+    <div id="word5">喜欢</div>
+    <div id="word6">时长</div>
+    <div id="word7"><a href="http://127.0.0.1:5501/%E6%92%AD%E6%94%BE%E9%A1%B51.html">有形的翅膀</a> <audio src="张韶涵 - 有形的翅膀.mp3" controls></audio></div>
+    <div id="word8"><a href="">有形的翅膀</a></div>
+    <div id="button2"><input type="radio"></div>
+    <div id="word9">3:36</div>
+    <div id="word10"><a href="http://127.0.0.1:5501/%E6%92%AD%E6%94%BE%E9%A1%B52.html">空白格</a> <audio src="蔡健雅 - 空白格.mp3" controls></audio></div>
+    <div id="word11"><a href="">goodbye&hello</a></div>
+    <div id="word12"><input type="radio"></div>
+    <div id="word13">4:12</div>
+    <div id="word14"><a href="http://127.0.0.1:5501/%E6%92%AD%E6%94%BE%E9%A1%B53.html">找自己</a> <audio src="陶喆 - 找自己.mp3" controls></audio></div>
+    <div id="word15"><a href="">I'm ok</a></div>
+    <div id="word16"><input type="radio"></div>
+    <div id="word17">5:04</div>
+</body>
+</html>
