@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/audio.css">
+</head>
+
+<body id="body" background="./img/bg0.png">
+    <div class="upper-container">
+       
+        <div class="record-container">
+            <div class="record-bg">
+                <div id="record-img" class="rotate-play"></div>
+            </div>
+        </div>
+        
+        <div class="introduction-container">
+            <div class="text-container">
+                <div id="music-title">音乐1</div>
+                <div class="author-container">作者：
+                    <span id="author-name">未知</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="audio-box">
+        <div class="audio-container">
+            <audio id="audioTag"></audio>
+            
+            <div class="a-progress">
+                <div class="pgs-total" id="progress-total">
+                    <div class="pgs-play" id="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+           
+            <div class="a-controls">
+                
+                <div class="time-container">
+                    <span class="played-time" id="playedTime">00:00</span>&nbsp;/&nbsp;
+                    <span class="audio-time" id="audioTime">00:00</span>
+                </div>
+                
+                <div class="center-button-container">
+                   
+                    <div id="playMode" class="center-icon mode"></div>
+                    
+                    <div id="skipForward" class="center-icon s-right"></div>
+                    
+                    <div id="playPause" class="icon-play"></div>
+                    
+                    <div id="skipBackward" class="center-icon s-left"></div>
+                    
+                    <div id="volume" class="center-icon volume"></div>
+                    
+                    <input type="range" id="volumn-togger" name="change" value="70" min="0" max="100" step="1">
+                </div>
+                
+                <div class="bottom-button-container">
+                    
+                    <div id="list" class="bottom-icon list"></div>
+                    
+                    <div id="speed" class="speed">1.0X</div>
+                    
+                    <div id="MV" class="bottom-icon MV"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="close-list" id="close-list"></div>
+    <div class="music-list" id="music-list">
+        <div class="music-list-container">
+            <div class="music-list-title">播放队列</div>
+            <hr class="line">
+            <div class="all-list">
+                <div id="music0">洛春赋</div>
+                <div id="music1">Yesterday</div>
+                <div id="music2">江南烟雨色</div>
+                <div id="music3">Vision pt.II</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/audio.js"></script>
+</body>
+
+</html>
